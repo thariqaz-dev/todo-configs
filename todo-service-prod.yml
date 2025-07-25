@@ -1,8 +1,8 @@
 spring: 
   datasource: 
     url: jdbc:mysql://localhost:3306/todo_db?useSSL=true&requireSSL=true&verifyServerCertificate=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
-    username: 
-    password: 
+    username: "{cipher}87f8e945d4c0bb7ea9a2eb46afe8ce3b8d3fb95c8c4a9a15f3bf98956b617aaa"
+    password: "{cipher}b526f98c1f52d1e4c555870a3e417508ed28d398f514ef7cae59aacee481e4340165a6b0a74eda784b77936317109ef6"
     driver-class-name: com.mysql.cj.jdbc.Driver 
   jpa: 
     hibernate: 

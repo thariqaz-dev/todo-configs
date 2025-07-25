@@ -1,8 +1,8 @@
 spring: 
   datasource: 
     url: jdbc:mysql://localhost:3306/reminder_db?useSSL=true&requireSSL=true&verifyServerCertificate=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
-    username: 
-    password: 
+    username: "{cipher}5df78880373e239959a67824a8a1c6d992adb2cbc2a8f27605a00201e76eb68d"
+    password: "{cipher}057c3a54076faf4443151b72e95889362313081fbf718920247f354892195e7f42a85de28e2f21f56587fad2457abae2"
     driver-class-name: com.mysql.cj.jdbc.Driver 
   jpa: 
     hibernate: 
