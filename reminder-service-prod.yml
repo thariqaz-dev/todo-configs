@@ -1,0 +1,27 @@
+spring: 
+  datasource: 
+    url: jdbc:mysql://localhost:3306/reminder_db?useSSL=true&requireSSL=true&verifyServerCertificate=false&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    username: 
+    password: 
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+  jpa: 
+    hibernate: 
+      ddl-auto: validate 
+    show-sql: false 
+    properties: 
+      hibernate:
+        format-sql: false 
+        dialect: org.hibernate.dialect.MySQL8Dialect 
+management:
+  endpoints:
+    web: 
+      exposure:
+        include: health, info 
+  endpoint:
+    health:
+      show-details: when_authorized 
+logging:
+  level:
+    root: INFO 
+    org.springframework.web: DEBUG 
+    com.azscode.reminder_service: DEBUG 
