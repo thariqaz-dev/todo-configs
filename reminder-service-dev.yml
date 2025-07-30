@@ -20,7 +20,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health, info, refresh, busrefresh, env 
+        include: health, info, refresh, busrefresh, env, shutdown 
   endpoint: 
     health:
       show-details: always 
